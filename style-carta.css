@@ -19,6 +19,11 @@ h1{
     font-weight: 100;
     text-shadow: 3px 2px 2px rgb(252, 172, 107);
     font-size: 50px;
+
+    transition: transform 1.2s ease-in-out;
+}
+h1:hover{
+    transform: scale(1.1);
 }
 
  h2{
@@ -86,3 +91,15 @@ a:hover{
     color: rgba(95, 0, 0, 0.911);
     text-shadow: 5px 5px 5px rgba(255, 91, 37, 0.979);
 }
+
+.especial{
+    color: rgb(255, 219, 166);
+    transition: transform 1s ease-in-out;
+}
+
+.especial:hover{
+    transform: scale(1.2);
+    color: rgb(252, 172, 107);
+    text-shadow: 5px 5px 5px rgba(255, 91, 37, 0.979);
+}
+
