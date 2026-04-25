@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        let mediaLAL,mediaGSW, mediaCC;
+        
+        mediaLAL = (89 + 120 + 103 + 100)/4;
+        mediaGSW = (97 + 105 + 110 + 99)/ 4;
+        mediaCC = (90 + 117 + 108 + 89)/4;
+
+        switch (true){
+            case (mediaCC > mediaGSW && mediaCC > mediaLAL):
+                alert("Vitória dos Cleveland Cavaliers");
+                break;
+            case (mediaGSW > mediaCC && mediaGSW >mediaLAL):
+                alert("Vitória dos Golden State Warriors");
+                break;
+            case (mediaLAL> mediaCC && mediaLAL > mediaGSW):
+                alert("Vitória dos Los Angeles Lakers");
+                break;
+            default:
+                alert("erro");
+                break;
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

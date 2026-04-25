@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMC</title>
+    <script>
+        let nome = prompt("Digite seu nome: ");
+        let altura = prompt("Digite sua altura: ");
+        let peso = prompt("Digite seu peso: ");
+
+        let imc = peso/(altura**2);
+
+        alert("Seu IMC é de " + imc.toFixed(2));
+
+        if (imc < 18.5){
+            alert(nome +" você está abaixo do peso"); 
+        } else if (imc < 24.9){
+            alert(nome + " você está como peso normal");
+        } else if (imc < 29.9){
+            alert(nome +" você está com sobrepeso"); 
+        } else if (imc < 34.9){
+           alert(nome +" você está com obesidade"); 
+        }
+
+        //Condição ternária
+        let groupRisco = imc > 34.9 ? "Está dentro do grupo de risco!!": "Está fora do grupo de risco";
+
+        alert(groupRisco);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

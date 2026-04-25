@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        let nome = "Karolina Santiago";
+        let idade = 20;
+        let altura = 1.61;
+        let salario = null;
+
+        //String tem prioridade, logo esse comando vai ser de concatenação
+        console.log(nome + idade + altura);
+
+        //O comando de soma com concatenação
+        console.log(nome + (idade + altura));
+
+        //Concatenação com nulo
+        console.log(nome + (idade + altura) + salario);
+
+        //Comando de entrada
+        let nome2 = prompt("Digite um nome: ");
+
+        //Mostra o tipo primitido da variável
+        alert(typeof altura)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
